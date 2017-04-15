@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<!doctype html>
+<html lang="en">
+<head>
     <title>Code coverage report for node-npmtest-multer/multer/storage/disk.js</title>
     <meta charset="utf-8">
     <style>
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-multer/multer/storage/</a> » disk.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-multer/multer/storage/</a> &#187; disk.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -352,43 +354,43 @@ var path = require('path')
 var crypto = require('crypto')
 var mkdirp = require('mkdirp')
 &nbsp;
-<span class="fstat-no" title="function not covered">function getFilename (req, file, cb) {</span>
-<span class="cstat-no" title="statement not covered">  crypto.pseudoRandomBytes(16, <span class="fstat-no" title="function not covered">function (err, raw) {</span></span>
-<span class="cstat-no" title="statement not covered">    cb(err, err ? undefined : raw.toString('hex'))</span>
+<span class="fstat-no" title="function not covered" >function getFilename (req, file, cb) {</span>
+<span class="cstat-no" title="statement not covered" >  crypto.pseudoRandomBytes(16, <span class="fstat-no" title="function not covered" >function (err, raw) {</span></span>
+<span class="cstat-no" title="statement not covered" >    cb(err, err ? undefined : raw.toString('hex'))</span>
   })
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function getDestination (req, file, cb) {</span>
-<span class="cstat-no" title="statement not covered">  cb(null, os.tmpdir())</span>
+<span class="fstat-no" title="function not covered" >function getDestination (req, file, cb) {</span>
+<span class="cstat-no" title="statement not covered" >  cb(null, os.tmpdir())</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function DiskStorage (opts) {</span>
-<span class="cstat-no" title="statement not covered">  this.getFilename = (opts.filename || getFilename)</span>
+<span class="fstat-no" title="function not covered" >function DiskStorage (opts) {</span>
+<span class="cstat-no" title="statement not covered" >  this.getFilename = (opts.filename || getFilename)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (typeof opts.destination === 'string') {</span>
-<span class="cstat-no" title="statement not covered">    mkdirp.sync(opts.destination)</span>
-<span class="cstat-no" title="statement not covered">    this.getDestination = <span class="fstat-no" title="function not covered">function ($0, $1, cb) {</span> <span class="cstat-no" title="statement not covered">cb(null, opts.destination) }</span></span>
+<span class="cstat-no" title="statement not covered" >  if (typeof opts.destination === 'string') {</span>
+<span class="cstat-no" title="statement not covered" >    mkdirp.sync(opts.destination)</span>
+<span class="cstat-no" title="statement not covered" >    this.getDestination = <span class="fstat-no" title="function not covered" >function ($0, $1, cb) {</span> <span class="cstat-no" title="statement not covered" >cb(null, opts.destination) }</span></span>
   } else {
-<span class="cstat-no" title="statement not covered">    this.getDestination = (opts.destination || getDestination)</span>
+<span class="cstat-no" title="statement not covered" >    this.getDestination = (opts.destination || getDestination)</span>
   }
 }
 &nbsp;
-DiskStorage.prototype._handleFile = <span class="fstat-no" title="function not covered">function _handleFile (req, file, cb) {</span>
-<span class="cstat-no" title="statement not covered">  var that = this</span>
+DiskStorage.prototype._handleFile = <span class="fstat-no" title="function not covered" >function _handleFile (req, file, cb) {</span>
+<span class="cstat-no" title="statement not covered" >  var that = this</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  that.getDestination(req, file, <span class="fstat-no" title="function not covered">function (err, destination) {</span></span>
-<span class="cstat-no" title="statement not covered">    if (err) <span class="cstat-no" title="statement not covered">return cb(err)</span></span>
+<span class="cstat-no" title="statement not covered" >  that.getDestination(req, file, <span class="fstat-no" title="function not covered" >function (err, destination) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (err) <span class="cstat-no" title="statement not covered" >return cb(err)</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    that.getFilename(req, file, <span class="fstat-no" title="function not covered">function (err, filename) {</span></span>
-<span class="cstat-no" title="statement not covered">      if (err) <span class="cstat-no" title="statement not covered">return cb(err)</span></span>
+<span class="cstat-no" title="statement not covered" >    that.getFilename(req, file, <span class="fstat-no" title="function not covered" >function (err, filename) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (err) <span class="cstat-no" title="statement not covered" >return cb(err)</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">      var finalPath = path.join(destination, filename)</span>
-<span class="cstat-no" title="statement not covered">      var outStream = fs.createWriteStream(finalPath)</span>
+<span class="cstat-no" title="statement not covered" >      var finalPath = path.join(destination, filename)</span>
+<span class="cstat-no" title="statement not covered" >      var outStream = fs.createWriteStream(finalPath)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">      file.stream.pipe(outStream)</span>
-<span class="cstat-no" title="statement not covered">      outStream.on('error', cb)</span>
-<span class="cstat-no" title="statement not covered">      outStream.on('finish', <span class="fstat-no" title="function not covered">function () {</span></span>
-<span class="cstat-no" title="statement not covered">        cb(null, {</span>
+<span class="cstat-no" title="statement not covered" >      file.stream.pipe(outStream)</span>
+<span class="cstat-no" title="statement not covered" >      outStream.on('error', cb)</span>
+<span class="cstat-no" title="statement not covered" >      outStream.on('finish', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        cb(null, {</span>
           destination: destination,
           filename: filename,
           path: finalPath,
@@ -399,26 +401,25 @@ DiskStorage.prototype._handleFile = <span class="fstat-no" title="function not c
   })
 }
 &nbsp;
-DiskStorage.prototype._removeFile = <span class="fstat-no" title="function not covered">function _removeFile (req, file, cb) {</span>
-<span class="cstat-no" title="statement not covered">  var path = file.path</span>
+DiskStorage.prototype._removeFile = <span class="fstat-no" title="function not covered" >function _removeFile (req, file, cb) {</span>
+<span class="cstat-no" title="statement not covered" >  var path = file.path</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  delete file.destination</span>
-<span class="cstat-no" title="statement not covered">  delete file.filename</span>
-<span class="cstat-no" title="statement not covered">  delete file.path</span>
+<span class="cstat-no" title="statement not covered" >  delete file.destination</span>
+<span class="cstat-no" title="statement not covered" >  delete file.filename</span>
+<span class="cstat-no" title="statement not covered" >  delete file.path</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  fs.unlink(path, cb)</span>
+<span class="cstat-no" title="statement not covered" >  fs.unlink(path, cb)</span>
 }
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered">function (opts) {</span>
-<span class="cstat-no" title="statement not covered">  return new DiskStorage(opts)</span>
+module.exports = <span class="fstat-no" title="function not covered" >function (opts) {</span>
+<span class="cstat-no" title="statement not covered" >  return new DiskStorage(opts)</span>
 }
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 05:58:11 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 15 2017 22:10:18 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>

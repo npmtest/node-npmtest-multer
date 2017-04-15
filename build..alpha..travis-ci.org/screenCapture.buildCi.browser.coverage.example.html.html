@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-multer/multer/lib/file-appender.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-multer/multer/storage/disk.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,27 +192,27 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-multer">npmtest-multer (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-multer/multer/lib/file-appender.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-multer/multer/storage/disk.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">15.56% <small>(7 / 45)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">28.21% <small>(11 / 39)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">0% <small>(0 / 21)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">0% <small>(0 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">17.5% <small>(7 / 40)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">30.56% <small>(11 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-multer/multer/lib/</a> &#187; file-appender.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-multer/multer/storage/</a> » disk.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -281,22 +279,13 @@
 65
 66
 67
-68
-69</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+68</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -306,32 +295,11 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -340,89 +308,117 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var objectAssign = require('object-assign')
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var fs = require('fs')
+var os = require('os')
+var path = require('path')
+var crypto = require('crypto')
+var mkdirp = require('mkdirp')
 &nbsp;
-<span class="fstat-no" title="function not covered" >function arrayRemove (arr, item) {</span>
-<span class="cstat-no" title="statement not covered" >  var idx = arr.indexOf(item)</span>
-<span class="cstat-no" title="statement not covered" >  if (~idx) <span class="cstat-no" title="statement not covered" >arr.splice(idx, 1)</span></span>
+<span class="fstat-no" title="function not covered">function getFilename (req, file, cb) {</span>
+<span class="cstat-no" title="statement not covered">  crypto.pseudoRandomBytes(16, <span class="fstat-no" title="function not covered">function (err, raw) {</span></span>
+<span class="cstat-no" title="statement not covered">    cb(err, err ? undefined : raw.toString('hex'))</span>
+  })
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function FileAppender (strategy, req) {</span>
-<span class="cstat-no" title="statement not covered" >  this.strategy = strategy</span>
-<span class="cstat-no" title="statement not covered" >  this.req = req</span>
+<span class="fstat-no" title="function not covered">function getDestination (req, file, cb) {</span>
+<span class="cstat-no" title="statement not covered">  cb(null, os.tmpdir())</span>
+}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  switch (strategy) {</span>
-    case 'NONE': <span class="cstat-no" title="statement not covered" >break</span>
-    case 'VALUE': <span class="cstat-no" title="statement not covered" >break</span>
-    case 'ARRAY': <span class="cstat-no" title="statement not covered" >req.files = []; <span class="cstat-no" title="statement not covered" ></span>break</span>
-    case 'OBJECT': <span class="cstat-no" title="statement not covered" >req.files = Object.create(null); <span class="cstat-no" title="statement not covered" ></span>break</span>
-    default: <span class="cstat-no" title="statement not covered" >throw new Error('Unknown file strategy: ' + strategy)</span>
+<span class="fstat-no" title="function not covered">function DiskStorage (opts) {</span>
+<span class="cstat-no" title="statement not covered">  this.getFilename = (opts.filename || getFilename)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">  if (typeof opts.destination === 'string') {</span>
+<span class="cstat-no" title="statement not covered">    mkdirp.sync(opts.destination)</span>
+<span class="cstat-no" title="statement not covered">    this.getDestination = <span class="fstat-no" title="function not covered">function ($0, $1, cb) {</span> <span class="cstat-no" title="statement not covered">cb(null, opts.destination) }</span></span>
+  } else {
+<span class="cstat-no" title="statement not covered">    this.getDestination = (opts.destination || getDestination)</span>
   }
 }
 &nbsp;
-FileAppender.prototype.insertPlaceholder = <span class="fstat-no" title="function not covered" >function (file) {</span>
-<span class="cstat-no" title="statement not covered" >  var placeholder = {</span>
-    fieldname: file.fieldname
-  }
+DiskStorage.prototype._handleFile = <span class="fstat-no" title="function not covered">function _handleFile (req, file, cb) {</span>
+<span class="cstat-no" title="statement not covered">  var that = this</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  switch (this.strategy) {</span>
-    case 'NONE': <span class="cstat-no" title="statement not covered" >break</span>
-    case 'VALUE': <span class="cstat-no" title="statement not covered" >break</span>
-    case 'ARRAY': <span class="cstat-no" title="statement not covered" >this.req.files.push(placeholder); <span class="cstat-no" title="statement not covered" ></span>break</span>
-    case 'OBJECT':
-<span class="cstat-no" title="statement not covered" >      if (this.req.files[file.fieldname]) {</span>
-<span class="cstat-no" title="statement not covered" >        this.req.files[file.fieldname].push(placeholder)</span>
-      } else {
-<span class="cstat-no" title="statement not covered" >        this.req.files[file.fieldname] = [placeholder]</span>
-      }
-<span class="cstat-no" title="statement not covered" >      break</span>
-  }
+<span class="cstat-no" title="statement not covered">  that.getDestination(req, file, <span class="fstat-no" title="function not covered">function (err, destination) {</span></span>
+<span class="cstat-no" title="statement not covered">    if (err) <span class="cstat-no" title="statement not covered">return cb(err)</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return placeholder</span>
+<span class="cstat-no" title="statement not covered">    that.getFilename(req, file, <span class="fstat-no" title="function not covered">function (err, filename) {</span></span>
+<span class="cstat-no" title="statement not covered">      if (err) <span class="cstat-no" title="statement not covered">return cb(err)</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">      var finalPath = path.join(destination, filename)</span>
+<span class="cstat-no" title="statement not covered">      var outStream = fs.createWriteStream(finalPath)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">      file.stream.pipe(outStream)</span>
+<span class="cstat-no" title="statement not covered">      outStream.on('error', cb)</span>
+<span class="cstat-no" title="statement not covered">      outStream.on('finish', <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">        cb(null, {</span>
+          destination: destination,
+          filename: filename,
+          path: finalPath,
+          size: outStream.bytesWritten
+        })
+      })
+    })
+  })
 }
 &nbsp;
-FileAppender.prototype.removePlaceholder = <span class="fstat-no" title="function not covered" >function (placeholder) {</span>
-<span class="cstat-no" title="statement not covered" >  switch (this.strategy) {</span>
-    case 'NONE': <span class="cstat-no" title="statement not covered" >break</span>
-    case 'VALUE': <span class="cstat-no" title="statement not covered" >break</span>
-    case 'ARRAY': <span class="cstat-no" title="statement not covered" >arrayRemove(this.req.files, placeholder); <span class="cstat-no" title="statement not covered" ></span>break</span>
-    case 'OBJECT':
-<span class="cstat-no" title="statement not covered" >      if (this.req.files[placeholder.fieldname].length === 1) {</span>
-<span class="cstat-no" title="statement not covered" >        delete this.req.files[placeholder.fieldname]</span>
-      } else {
-<span class="cstat-no" title="statement not covered" >        arrayRemove(this.req.files[placeholder.fieldname], placeholder)</span>
-      }
-<span class="cstat-no" title="statement not covered" >      break</span>
-  }
+DiskStorage.prototype._removeFile = <span class="fstat-no" title="function not covered">function _removeFile (req, file, cb) {</span>
+<span class="cstat-no" title="statement not covered">  var path = file.path</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">  delete file.destination</span>
+<span class="cstat-no" title="statement not covered">  delete file.filename</span>
+<span class="cstat-no" title="statement not covered">  delete file.path</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">  fs.unlink(path, cb)</span>
 }
 &nbsp;
-FileAppender.prototype.replacePlaceholder = <span class="fstat-no" title="function not covered" >function (placeholder, file) {</span>
-<span class="cstat-no" title="statement not covered" >  if (this.strategy === 'VALUE') {</span>
-<span class="cstat-no" title="statement not covered" >    this.req.file = file</span>
-<span class="cstat-no" title="statement not covered" >    return</span>
-  }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  delete placeholder.fieldname</span>
-<span class="cstat-no" title="statement not covered" >  objectAssign(placeholder, file)</span>
+module.exports = <span class="fstat-no" title="function not covered">function (opts) {</span>
+<span class="cstat-no" title="statement not covered">  return new DiskStorage(opts)</span>
 }
-&nbsp;
-module.exports = FileAppender
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
     <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 15 2017 22:10:18 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
