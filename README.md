@@ -1,6 +1,6 @@
 # npmtest-multer
 
-#### test coverage for  [multer (v1.3.0)](https://github.com/expressjs/multer#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-multer.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-multer) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-multer.svg)](https://travis-ci.org/npmtest/node-npmtest-multer)
+#### basic test coverage for  [multer (v1.3.0)](https://github.com/expressjs/multer#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-multer.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-multer) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-multer.svg)](https://travis-ci.org/npmtest/node-npmtest-multer)
 
 #### Middleware for handling `multipart/form-data`.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-multer/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-multer/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-multer/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-multer/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-multer/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-multer/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-multer/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-multer/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-multer/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-multer/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-multer/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-multer/build/coverage.html/index.html)
 
@@ -116,7 +116,8 @@
     "scripts": {
         "test": "standard && mocha"
     },
-    "version": "1.3.0"
+    "version": "1.3.0",
+    "bin": {}
 }
 ```
 
